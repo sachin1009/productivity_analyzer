@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Productivity Analyzer",
+  "version": "1.0",
+  "description": "Tracks and analyzes your web activity",
+  "permissions": ["activeTab", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "host_permissions": ["http://127.0.0.1:5000/*"]
+}
